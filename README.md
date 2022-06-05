@@ -1,4 +1,4 @@
-# Repositório para testar de JS
+# Repo tests
 
 ##Repositório Usado apenas pra testar e escrever scripts em JS que podem ser usado na CWI.
 
