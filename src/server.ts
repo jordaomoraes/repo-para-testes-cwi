@@ -3,14 +3,19 @@ import cors from 'cors';
 import routes from './routes';
 import moment from 'moment'
 import Cwi from './cwi'
+import Automationcws from './automationClientesCWS'
+
 
 const app = express();
 app.use(cors())
 app.use(express.json())
 app.use(routes);
 
-const TestesCwi = new (Cwi as any)();
-TestesCwi.testesJs();
+// const TestesCwi = new (Cwi  as any)();
+// TestesCwi.testesJs();
+
+const AutomationClientesTestes = new (Automationcws  as any)();
+AutomationClientesTestes.AutomaionClientesCws();
 
 
 // const diaMais30 = moment().add(30, 'days').format("YYYYMMDD");
