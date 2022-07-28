@@ -1,0 +1,22 @@
+[
+	{
+		"ZY_MASTER": "RT00000745Y2   ",
+		"ZY_PROD": "12090019/F                 ",
+		"ZY_DESC": "BUCHA LANCA DIANT 3C PLUS",
+		"ZY_LINHA": "03|206",
+		"ZY_PERPRC": 100,
+		"ZY_CODSIM": "12090019F      ",
+		"ZY_DESCLG": "                                                                                                                                                                                                        ",
+		"FLAG_EXCLUSAO": "False"
+	},
+	{
+		"ZY_MASTER": "RT00000745Y4   ",
+		"ZY_PROD": "808/00296/A                ",
+		"ZY_DESC": "BUCHA LEVANTE DIANT. JCB 3C/3C PLUS",
+		"ZY_LINHA": "03|206",
+		"ZY_PERPRC": 100,
+		"ZY_CODSIM": "80800296A      ",
+		"ZY_DESCLG": "                                                                                                                                                                                                        ",
+		"FLAG_EXCLUSAO": "False"
+	}	
+]
