@@ -8,7 +8,7 @@
 * Depois yarn start para iniciar o servidor.
 
 
-### Para executar o servidro JS
+### Para executar o servidor JS
 * Entrar na pasta src.
 * Executar yarn ou npm e 
 * Depois yarn dev para iniciar o servidor.
