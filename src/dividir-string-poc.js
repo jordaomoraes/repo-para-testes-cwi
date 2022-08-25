@@ -1,6 +1,8 @@
 
 const RetiraAssentos = require('./retira-assentos')
 
+
+
 const data = {
 
 	TaxationGroupForDestination__r: null
@@ -25,16 +27,18 @@ const string = data.TaxationGroupForDestination__r === null ? null :
 
 // const taxationGroup = dadosCadastrais.TaxationGroup__r === null ? null : (dadosCadastrais.TaxationGroup__r.ExternalID__c).split('|'); 
 const teste =  string === null ? null : (string[1])
+
+const testes = '0';
+
+const teste3 = 0;;
 class dividirStringPoc {
 
+	
+
 	async Testes() {
-
-		console.log(` dividir -> ${teste} `)
+		
+		console.log("isso é um teste " + teste3)
 	}
-
-
-
-
 }
 
 
