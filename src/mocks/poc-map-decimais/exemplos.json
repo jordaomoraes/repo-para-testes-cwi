@@ -1,0 +1,50 @@
+[
+    {
+      "B2_FILIAL": "00601051",
+      "B2_COD": "NB-61L30169                ",
+      "B2_LOCAL": "31",
+      "B2_QATU": 5,
+      "B2_CM1": 173.90800000000002,
+      "B2_CUSFP": 177.3884534543543,
+      "ID_EXTERNO": "00601051|NB-61L30169                ",
+      "ZP_CGIROSD": "NORMAL",
+      "DATA_ULTIMA_ATUALIZACAO": null,
+      "FLAG_EXCLUSAO": "False",
+      "B2_QACLASS": 0,
+      "B2_NAOCLAS": 0,
+      "QUANTPED": 0,
+      "CHEGADAS": " "
+    },
+    {
+      "B2_FILIAL": "00601019",
+      "B2_COD": "WL-1752516PREL36/467       ",
+      "B2_LOCAL": "82",
+      "B2_QATU": 8,
+      "B2_CM1": 4070.1925000000,
+      "B2_CUSFP": 4483.731000000,
+      "ID_EXTERNO": "00601019|WL-1752516PREL36/467       ",
+      "ZP_CGIROSD": "NORMAL",
+      "DATA_ULTIMA_ATUALIZACAO": null,
+      "FLAG_EXCLUSAO": "False",
+      "B2_QACLASS": 0,
+      "B2_NAOCLAS": 0,
+      "QUANTPED": 0,
+      "CHEGADAS": " "
+    },
+    {
+      "B2_FILIAL": "00601000",
+      "B2_COD": "P576926/112                ",
+      "B2_LOCAL": "02",
+      "B2_QATU": 1,
+      "B2_CM1": 258.4543534534,
+      "B2_CUSFP": 263.619534534,
+      "ID_EXTERNO": "00601000|P576926/112                ",
+      "ZP_CGIROSD": "NORMAL",
+      "DATA_ULTIMA_ATUALIZACAO": null,
+      "FLAG_EXCLUSAO": "False",
+      "B2_QACLASS": 0,
+      "B2_NAOCLAS": 0,
+      "QUANTPED": 12,
+      "CHEGADAS": "(12) 16-SEP-22"
+    }
+]
