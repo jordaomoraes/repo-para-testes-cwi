@@ -10,6 +10,7 @@ const opcoesTernario = require('./poc-opcoes-ternario')
 const mapDecimais = require('./poc-map-casas-decimais')
 const stocks = require ('./mocks/poc-map-decimais/exemplos.json')
 const PocTernario = require('./poc-ternarios')
+const PocDividirJsonEmArray = require('./poc-divivir-json-em-array-pedido-compra')
 
 const app = express();
 
@@ -22,7 +23,8 @@ const app = express();
 // mapDecimais.transform(stocks);
 // PocArquivoCsv.transform(similars);
 
-PocTernario.Testes();
+// PocTernario.Testes();
+PocDividirJsonEmArray.Testes();
 
 
 
