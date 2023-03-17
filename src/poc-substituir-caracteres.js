@@ -1,13 +1,15 @@
 
 const RetiraAssentos = require('./retira-assentos')
+var accents = require('remove-accents');
 
 class PocSubstituirCaracteres {
 
 	async Testes() {
-		 const stringText = "SEGUE 'PáàRé CORRENTE'< NO PIAúÍ ÇLIEêTE RETIRA NA AGÊNCIA";
+		 const stringText = "SE#&GUE. 'PáàRé - /CORRENTE'< NO PIAúÍ | ÇLIEêTE RETIRA NA AGÊNCIA";
 		// console.log( `Com replace simples || string ${stringText} || Tratada -> ${testReplace(stringText)}`);
 		// console.log( `Com Regex || string  ${stringText} || Tratada -> ${removeAcento(stringText)}`);
-		 console.log( `Com Normalize || string  ${stringText} || Tratada -> ${testeNormalize(stringText)}`);
+		var output = accents.remove(stringText);
+		 console.log( `Com Normalize || string  ${stringText} || Tratada -> ${removeAcento(output)} `);
 	//	testReplace();
 	}
 }
@@ -16,6 +18,7 @@ function testeNormalize(text){
 	//return text.normalize("NFD").replace(/[\u0300-\u036f]/g, '');
 	return text.normalize("NFD").replace(/([\u0300-\u036f]|[^0-9a-zA-Z\s])/g, '')
 }
+
 
 function removeAcento(text) {
 	text = text.toLowerCase();

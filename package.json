@@ -7,16 +7,17 @@
     "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
     "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback",
-		"dev" :"nodemon src/servidor-cwi.js"
+    "dev": "nodemon src/servidor-cwi.js"
   },
   "dependencies": {
     "@types/cors": "^2.8.12",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "knex": "^0.95.15",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "momment": "^0.0.1",
     "nodemon": "^2.0.18",
+    "remove-accents": "^0.4.4",
     "sqlite3": "^5.0.2",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.5"

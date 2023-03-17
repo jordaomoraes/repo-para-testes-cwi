@@ -10,19 +10,23 @@ const opcoesTernario = require('./poc-opcoes-ternario')
 const mapDecimais = require('./poc-map-casas-decimais')
 const stocks = require ('./mocks/poc-map-decimais/exemplos.json')
 const PocTernario = require('./poc-ternarios')
+const PocAgrupamento = require('./poc-agrupamento-json')
+const PocDataHora = require('./poc-tratar-data-hora')
 
 const app = express();
 
 // AutomationClientesCws.Testes();
-// PocSubstituirCaracteres.Testes();
+//  PocSubstituirCaracteres.Testes();
 // PocBuscarFrase.Testes();
 // PocBase64ToXml.Testes();
-// DividirString.Testes();
+//  DividirString.Testes();
 // PocBuscarFrase.Testes();
 // mapDecimais.transform(stocks);
 // PocArquivoCsv.transform(similars);
+ // PocAgrupamento.Testes();
+ PocDataHora.Testes();
 
-PocTernario.Testes();
+//PocTernario.Testes();
 
 
 

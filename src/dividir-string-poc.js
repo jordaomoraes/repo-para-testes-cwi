@@ -3,41 +3,43 @@ const RetiraAssentos = require('./retira-assentos')
 
 
 
-const data = {
+const dadosCadastrais = {
 
-	TaxationGroupForDestination__r: null
-	
+	TaxationGroupForDestination__r: null,
 
-  // return status === 0
-  //   ? 'default'
-  //   : status === 1
-  //     ? 'icon-1'
-  //     : 'icon-2';
+	TaxationGroupForResale__r: {
+		attributes: {
+		  type: "SX5__c",
+		  url: "/services/data/v52.0/sobjects/SX5__c/a0I5e000008EAvhEAG"
+		},
+		ExternalID__c: "21|2SN"
+	  },
 
-	// TaxationGroupForDestination__r: {
-	// 	attributes: {
-	// 		type: "SX5__c",
-	// 		url: "/services/data/v54.0/sobjects/SX5__c/a0I5e000008EAtyEAG"
-	// 	},
-	// 	ExternalID__c: "21|4GR"
-	// }
-}
-const string = data.TaxationGroupForDestination__r === null ? null : 
-(data.TaxationGroupForDestination__r.ExternalID__c).split('|');
+	  TaxationGroup__r: null,
+	  ClientType__c: "L"
 
-// const taxationGroup = dadosCadastrais.TaxationGroup__r === null ? null : (dadosCadastrais.TaxationGroup__r.ExternalID__c).split('|'); 
-const teste =  string === null ? null : (string[1])
+	}
 
-const testes = '0';
+    const taxationGroupResale = dadosCadastrais.TaxationGroupForResale__r === null ? null : (dadosCadastrais.TaxationGroupForResale__r.ExternalID__c).split('|');
+    const taxationGroup = dadosCadastrais.TaxationGroup__r === null ? null : (dadosCadastrais.TaxationGroup__r.ExternalID__c).split('|');
+    const taxationGroupResaleValue = dadosCadastrais.TaxationGroupForResale__r === null ? null : dadosCadastrais.TaxationGroupForResale__r.ExternalID__c;
+    const taxationGroupValue = taxationGroup === null ? " " : taxationGroup[1];
 
-const teste3 = 0;;
+	const A1_GRPTRIB = dadosCadastrais.ClientType__c === 'R' && taxationGroupResaleValue != null
+	? taxationGroupResale[1]
+	: taxationGroupValue
+
+
 class dividirStringPoc {
 
-	
 
 	async Testes() {
-		
-		console.log("isso é um teste " + teste3)
+
+		console.log("taxationGroupResale " + taxationGroupResale)
+		console.log("taxationGroup " + taxationGroup)
+		console.log("taxationGroupResaleValue " + taxationGroupResaleValue)
+		console.log("taxationGroupValue " + taxationGroupValue)
+		console.log("A1_GRPTRIB " + A1_GRPTRIB)
 	}
 }
 
