@@ -1,0 +1,119 @@
+{
+  "request": {
+    "body": "{\"options\":{\"method\":\"POST\",\"url\":\"http://10.10.0.18:8099/rest/rechpedcompr/rechpedcompr\",\"headers\":{},\"body\":{\"Autentica\":{\"Login\":\"Integrador.API\",\"Senha\":\"!API@2021!\",\"IdOrigem\":\"CRM\",\"IdPedidoOrig\":\"000000177\"},\"PedCompra\":{\"C7_FILORI\":\"00601016\",\"CCNPJ\":\"88317847000730\",\"C7_COND\":\"999\",\"C7_CONTATO\":\"Douglas\"},\"ItensPedido\":[{\"C7_PRODUTO\":\"D9046300253\",\"C7_QUANT\":300,\"C7_PRECO\":10,\"C7_DATPRF\":\"20221130\",\"C7_IPI\":0,\"C7_OBS\":\"000000000 - 001\"},{\"C7_PRODUTO\":\"D9046300029\",\"C7_QUANT\":150,\"C7_PRECO\":12.5,\"C7_DATPRF\":\"20221130\",\"C7_IPI\":0,\"C7_OBS\":\"000000000 - 003\"}]},\"queryString\":{},\"fetchWithFullResponse\":true}}",
+    "url": "http://52.170.237.117:4005/v1/request/rest",
+    "method": "post",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+      "User-Agent": "axios/0.21.4",
+      "Content-Length": 620
+    }
+  },
+  "response": {
+    "body": {
+      "request": {
+        "queryString": {},
+        "body": {
+          "Autentica": {
+            "Login": "Integrador.API",
+            "Senha": "!API@2021!",
+            "IdOrigem": "CRM",
+            "IdPedidoOrig": "000000177"
+          },
+          "PedCompra": {
+            "C7_FILORI": "00601016",
+            "CCNPJ": "88317847000730",
+            "C7_COND": "999",
+            "C7_CONTATO": "Douglas"
+          },
+          "ItensPedido": [
+            {
+              "C7_PRODUTO": "D9046300253",
+              "C7_QUANT": 300,
+              "C7_PRECO": 10,
+              "C7_DATPRF": "20221130",
+              "C7_IPI": 0,
+              "C7_OBS": "000000000 - 001"
+            },
+            {
+              "C7_PRODUTO": "D9046300029",
+              "C7_QUANT": 150,
+              "C7_PRECO": 12.5,
+              "C7_DATPRF": "20221130",
+              "C7_IPI": 0,
+              "C7_OBS": "000000000 - 003"
+            }
+          ]
+        },
+        "transitional": {
+          "silentJSONParsing": true,
+          "forcedJSONParsing": true,
+          "clarifyTimeoutError": false
+        },
+        "transformRequest": [
+          null
+        ],
+        "transformResponse": [
+          null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "headers": {
+          "Accept": "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+          "User-Agent": "axios/0.22.0",
+          "Content-Length": 462
+        },
+        "params": {},
+        "data": "{\"Autentica\":{\"Login\":\"Integrador.API\",\"Senha\":\"!API@2021!\",\"IdOrigem\":\"CRM\",\"IdPedidoOrig\":\"000000177\"},\"PedCompra\":{\"C7_FILORI\":\"00601016\",\"CCNPJ\":\"88317847000730\",\"C7_COND\":\"999\",\"C7_CONTATO\":\"Douglas\"},\"ItensPedido\":[{\"C7_PRODUTO\":\"D9046300253\",\"C7_QUANT\":300,\"C7_PRECO\":10,\"C7_DATPRF\":\"20221130\",\"C7_IPI\":0,\"C7_OBS\":\"000000000 - 001\"},{\"C7_PRODUTO\":\"D9046300029\",\"C7_QUANT\":150,\"C7_PRECO\":12.5,\"C7_DATPRF\":\"20221130\",\"C7_IPI\":0,\"C7_OBS\":\"000000000 - 003\"}]}",
+        "method": "post",
+        "url": "http://10.10.0.18:8099/rest/rechpedcompr/rechpedcompr",
+        "fetchWithFullResponse": true
+      },
+      "response": {
+        "body": {
+          "PedCompra": [
+            {
+              "N. Pedido de compra": "792647",
+              "Status": "200 ok",
+              "Msg": "Incluido com Sucesso",
+              "Filial": "00601016"
+            },
+            {
+              "Local": "01",
+              "Produto": "D9046300253                "
+            },
+            {
+              "Local": "02",
+              "Produto": "D9046300029                "
+            }
+          ]
+        },
+        "statusCode": 201,
+        "headers": {
+          "server": "HTTPREST",
+          "connection": "close",
+          "content-length": "225",
+          "content-language": "pt-BR",
+          "content-type": "application/JSon;charset=utf-8",
+          "status": "201 Created",
+          "vary": "Accept-Encoding",
+          "date": "Thu, 24 Nov 2022 00:32:25 GMT"
+        }
+      }
+    },
+    "statusCode": 200,
+    "headers": {
+      "vary": "Origin",
+      "access-control-allow-origin": "*",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "2069",
+      "date": "Thu, 24 Nov 2022 00:32:25 GMT",
+      "connection": "keep-alive"
+    }
+  }
+}
